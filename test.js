@@ -16,10 +16,22 @@ describe("testing the count function", () => {
 
         assert.equal(result, 2);
     });
-    
+
     it("should return fizz when given 3", () => {
         let result = game.count(3);
 
         assert.equal(result, "fizz");
-    })
+    });
+
+    it("should return 4 when given 4", () => {
+        let result = game.count(4);
+
+        assert.equal(result, 4);
+    });
+
+    it("should return buzz when given 5", () => {
+        let result = game.count(5);
+
+        assert.equal(result, "buzz");
+    });
 });
