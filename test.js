@@ -10,4 +10,12 @@ describe("testing the count function", () => {
 
         assert.equal(result, 1);
     });
+
+    it("should return 2 when given 2", () => {
+        let game =new Game();
+
+        let result = game.count(2);
+
+        assert.equal(result, 2);
+    });
 });
