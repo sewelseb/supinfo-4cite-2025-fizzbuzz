@@ -16,4 +16,10 @@ describe("testing the count function", () => {
 
         assert.equal(result, 2);
     });
+    
+    it("should return fizz when given 3", () => {
+        let result = game.count(3);
+
+        assert.equal(result, "fizz");
+    })
 });
