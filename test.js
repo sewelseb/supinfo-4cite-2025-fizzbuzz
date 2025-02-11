@@ -40,4 +40,10 @@ describe("testing the count function", () => {
 
         assert.equal(result, "fizz");
     });
+
+    it("should return buzz when given 10", () => {
+        let result = game.count(10);
+
+        assert.equal(result, "buzz");
+    });
 });

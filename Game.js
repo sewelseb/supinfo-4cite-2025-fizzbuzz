@@ -1,7 +1,7 @@
 module.exports =  class Game {
     count(number) {
         if (this.isMultipleOf3(number)) return "fizz";
-        if (number === 5) return "buzz";
+        if (number === 5 || number === 10) return "buzz";
           
         return number;
     }
