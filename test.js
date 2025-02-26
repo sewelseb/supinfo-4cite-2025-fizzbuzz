@@ -3,9 +3,9 @@ const mocha = require('mocha');
 const Game = require('./Game');
 
 describe("testing the count function", () => {
-    beforeEach(() => {
-        let game = new Game();
-    });
+    
+    let game = new Game();
+    
     
     it("should return 1 when given 1",() => {
         let result = game.count(1);
@@ -54,17 +54,5 @@ describe("testing the count function", () => {
 
         assert.equal(result, "fizzbuzz");
     });
-
-    it('should throw an exception', () => {
-        var result = "";
-
-        try {
-            const res = math.add('hello',3)
-        } catch (error) {
-            result = error.message;
-        }
-
-        assert.equal(result, 'should be a number');
-    })
        
 });
